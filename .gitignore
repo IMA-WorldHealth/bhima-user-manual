@@ -1,0 +1,7 @@
+# Ignore compiled LaTeX files
+*.aux
+*.toc
+*.pdf
+*.ps
+*.log
+
