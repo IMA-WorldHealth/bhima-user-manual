@@ -18,9 +18,9 @@
 \maketitle 
 \chapter{Présentation}
 \section{Accès au système}
-\large{Pour accéder au système, la première de chose à faire est de lancer un navigateur web, en suite saisir l'adresse web de server dans la barre d'adresse du navigateur.}
+\large{Pour accéder au système, la première de chose à faire est de lancer un navigateur web, en suite saisir l'adresse web du server dans la barre d'adresse du navigateur.}
 
-La première interface de l'application est un formulaire qui demande à chaque utilisateur de pouvoir fournir son login, son mot de passe mais aussi de spécifier  le projet dont il sont assigné, comme le montre le formulaire ci-dessous.
+La première interface de l'application est un formulaire qui demande à l'utilisateur de pouvoir fournir son login, son mot de passe mais aussi de spécifier dans quelle projet voudriait il travailler, comme le montre le formulaire ci-dessous.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=12cm]{pic/login.png}
@@ -28,7 +28,7 @@ La première interface de l'application est un formulaire qui demande à chaque 
 \caption{Page d'identification et authentification des utilisateurs}
 \label{Page d'identification et authentification des utilisateurs}
 \end{figure}
-\\ L'accès au système n'est garanti que pour ceux qui possèdent un compte utilisateur, si l'utilisateur s'est authentifié alors il sera dirigé vers l'interface principale de l'application qui se présente de la manière suivante.
+\\ L'accès au système n'est garanti qu'à ceux qui possèdent un compte utilisateur, si l'utilisateur s'est authentifié alors il sera dirigé vers l'interface principale de l'application qui se présente de la manière suivante.
 \newpage
 \begin{figure}[h]
 \begin{center} 
@@ -37,7 +37,7 @@ La première interface de l'application est un formulaire qui demande à chaque 
 \caption{Interface principale de l'application}
 \label{Interface principale de l'application}
 \end{figure} 
-Dans sa partie gauche de la figure ci-dessous on retrouve le logo IMA World Heath Ainsi que l'arborescence qui représente les modules du système auxquels l'utilisateur à accès. En dessous de l'arborescence figure deux boutons, le premier \includegraphics[scale=0.5]{pic/lang.png} permet de changer de langue et le second \includegraphics[scale=0.5]{pic/logout.png} permet de ce déconnecté du système.
+Dans sa partie gauche de la figure ci-dessous on retrouve le logo de IMA World Heath Ainsi que l'arborescence qui représente les groupes des principaux modules du système auxquels l'utilisateur a accès. En dessous de l'arborescence figure deux boutons, le premier \includegraphics[scale=0.5]{pic/lang.png} permet de changer de langue et le second \includegraphics[scale=0.5]{pic/logout.png} permet de se déconnecté du système.
 
 \begin{figure}[h]
 \begin{center}
@@ -48,7 +48,7 @@ Dans sa partie gauche de la figure ci-dessous on retrouve le logo IMA World Heat
 \end{figure} 
 
 \section{Utilisation de l'arborescence de navigation}
-L'arborescence de navigation contient les liens de chague module de l'application. Les modules sont regroupés en fonction de de leurs fonctionalités dans des dossiers tels que le dossier "Admin" affiché ci-dessous. Dans la première image, le dossier est fermé, en occultant tous les sous modules de ce module. Après le dossier est cliqué, une image d'un dossier ouvert montre que les contenus sont accessibles.
+L'arborescence de navigation contient les liens de chague module de l'application. Les modules sont regroupés en fonction de de leurs fonctionalités ou bien de leurs domaines d'activités, dans des dossiers tels que le dossier "Admin" affiché ci-dessous. Dans la première image, le dossier est fermé, en occultant tous ses sous modules. Après que le dossier soie cliqué, l'apperence de l'icone devient l'image d'un dossier ouvert montrant ainsi ses sous modules.
 
 \begin{figure}[h]
 \begin{center}
@@ -112,7 +112,7 @@ Le module admin est composé des sous modules qui permettent d'administrer le sy
 \end{figure} 
 
 \section{Dépôt}
-Ce menu permet d'enregistré mais aussi de gérer les dépôts.
+Ce module permet d'enregistré mais aussi de gérer les dépôts ou bien entrepôts.
 
 \begin{figure}[h]
 \begin{center}
@@ -122,7 +122,7 @@ Ce menu permet d'enregistré mais aussi de gérer les dépôts.
 \label{Interface principale permetant la gestion des dépôts}
 \end{figure}
 
-Dans la partie gauche l'on trouve un bouton qui permet d'ajouter un nouveau dépôt. Pour ajouter un nouveau dépôt, il suffit de cliquer sur le bouton \includegraphics[scale=0.7]{pic/AddNewStore.png}.
+Dans la partie gauche l'on trouve un bouton qui permet l'ajout de nouveau dépôt. Pour ajouter un nouveau dépôt, il suffit de cliquer sur le bouton \includegraphics[scale=0.7]{pic/AddNewStore.png}.
 
 \begin{figure}[h]
 \begin{center}
@@ -132,8 +132,8 @@ Dans la partie gauche l'on trouve un bouton qui permet d'ajouter un nouveau dép
 \label{Formulaire permettant d'ajouter un dépôt}
 \end{figure}
 
-Le formulaire ci-haut apparait lorsqu'un utilisateur clique sur le bouton \textbf{Ajouter}. Ce formulaire possède le champ \textbf{Nom} qui permet d'attribuer un nom à un dépôt, la case à cocher est ce un entrepôt permet de spécifier si le dépôt qui est entrain d'être enregistrer sera la principale dans l'organisation.
-L'enregistrement est effectif seulement si l'utilisateur clique sur le bouton Soumettre. \textbf{La liste de tous les dépôts} apparait sous forme de tableau. Ce tableau afficher toutes les informations relatives entre autre le numéro de référence, le nom et La zone \textbf{Acte} renferme deux icônes le premier \includegraphics[scale=0.7]{pic/EditUser.png}  permet de modifier le nom d'un dépôt le second \includegraphics[scale=0.7]{pic/DeleteWRed.png}  permet de supprimer un dépôt.
+Le formulaire ci-haut apparait lorsqu'un utilisateur clique sur le bouton \textbf{Ajouter}. Ce formulaire comporte le champ \textbf{Nom} qui permet d'attribuer un nom à un dépôt, la case à cocher est ce un entrepôt permet de spécifier si le dépôt qui est entrain d'être enregistrer pour à son tour reapprovisioné d'autre dépots.
+L'enregistrement est effectif seulement si l'utilisateur clique sur le bouton Soumettre. \textbf{La liste de tous les dépôts} apparait sous forme d'un tableau. Ce tableau affiche toutes les informations relatives entre autre le numéro de référence, le nom et La zone \textbf{Acte} renferme deux icônes le premier \includegraphics[scale=0.7]{pic/EditUser.png}  permet de modifier le nom d'un dépôt le second \includegraphics[scale=0.7]{pic/DeleteWRed.png} permet de supprimer un dépôt.
 
 \newpage
 \section{Entreprise}
@@ -149,7 +149,7 @@ Son interface principale se présente de la manière suivante.
 \label{Interface principale du module entreprise}
 \end{figure} 
 
-Dans la figure ci-haut on retrouve dans la partie gauche la liste des entreprises existante dans le système, au dessus de ce tableau il existe le bouton \includegraphics[scale=1]{pic/New_Entre.png} qui permet d'ajouter une nouvelle entreprise dans le système.
+Dans la figure ci-haut on retrouve dans la partie gauche la liste des entreprises existantent dans le système, au dessus de ce tableau il existe le bouton \includegraphics[scale=1]{pic/New_Entre.png} qui permet d'ajouter une nouvelle entreprise dans le système.
 
 Le formulaire permettant l'ajouter une nouvelle entreprise dans le système se présente de la manière suivante.
 \begin{figure}[h]
@@ -185,12 +185,13 @@ Son interface principale se présente de la manière suivante.
 \label{Interface principale du module Cash Box}
 \end{figure} 
 
-Dans la figure ci-haut on retrouve dans la partie gauche la liste des differents cash box existant au sein de l'organisation, à l'extrème droite, au dessus de ce tableau il existe le bouton \includegraphics[scale=1]{pic/AddNewStore.png} qui permet d'ajouter une Cashbox dans le système dans le système.
+Dans la figure ci-haut on retrouve dans la partie gauche la liste des differents cash box existant au sein de l'organisation, à l'extrème droite, au dessus de ce tableau il existe le bouton \includegraphics[scale=1]{pic/AddNewStore.png} qui permet d'ajouter une Cashbox dans le système.
 
-Le formulaire permettant l'ajouter un nouveau Cash Box dans le système se présente de la manière suivante.
+Le formulaire permettant d'ajouter un nouveau Cash Box dans le système se présente de la manière suivante.
+
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=8cm]{pic/FormAddCash.png}
+\includegraphics[width=8cm]{pic/FormAddCash.png} 
 \end{center}
 \caption{Formulaire d'enregistrement de Cash Box}
 \label{Formulaire d'enregistrement de Cash Box}
@@ -198,7 +199,8 @@ Le formulaire permettant l'ajouter un nouveau Cash Box dans le système se prés
 
 Une fois que tous ses éléments sont renseignés, il suffit de cliquer sur le bouton Soumettre pour enregistrer un nouveau Cash Box, il s'ajoutera automatiquement dans la liste des CashBox existantes. 
 
-Les tableaux réprésentant les Cash box existantes donne la possibilité de pouvoir mettre à jour les informations rélative à chaque Cash Box. Le tableau comportant la liste des Cash Box existantes comprend 5 rubriques, le ID, Le nom ou bien la designation, Le projet auquelle appartient ce Cash Box, ainsi que la qualification de caisse auxilliaire ou bien de Banque qui s'attache à un CashBox, la dernière  zone possède l'icône \includegraphics[scale=0.7]{pic/EditUser.png}, qui permet de modifier les méta données d'un cash box, si l'on clique sur ce dernier un formulaire s'affiche dans la partie droite de l'ecran avec les informations rélatives à Chacun de CashBox et donne la possibilité de pouvoir modifier si nécessaire et de valider les modifications grâce au bouton soumettre et le dernier icone permet de supprimer un CashBox dans la liste.
+Les tableaux réprésentant les Cash box existantes donne la possibilité de pouvoir mettre à jour les informations rélative à chaque Cash Box. Le tableau comportant la liste des Cash Box existantent comprend 5 rubriques, le ID, Le nom ou bien la designation, Le projet auquelle appartient ce Cash Box, ainsi que la qualification de caisse auxilliaire ou bien de Banque qui s'attache à un CashBox, la dernière  zone possède l'icône \includegraphics[scale=0.7]{pic/EditUser.png}, qui permet de modifier les méta données d'un cash box, si l'on clique sur ce dernier un formulaire s'affiche dans la partie droite de l'ecran avec les informations rélatives à Chacun de CashBox et donne la possibilité de pouvoir modifier si nécessaire et de valider les modifications grâce au bouton soumettre et le dernier icone permet de supprimer un CashBox dans la liste.
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=8cm]{pic/EditCashBox.png}
@@ -211,7 +213,7 @@ Les tableaux réprésentant les Cash box existantes donne la possibilité de pou
 \newpage
 %/////////////% UTILISATEUR ET PERMISSION
 \section{Utilisateur \& Permissions}
-Le sous modules Utilisateur \& permissions d'ajouter des utilisateurs au système, d'administrer l'attribution de leur niveau d'accès, leur affiliations à des projets ainsi que l'administration de leur compte d'un utilisateur.
+Le sous modules Utilisateurs \& permissions d'ajouter des utilisateurs au système, d'administrer l'attribution de leur niveau d'accès, leur affiliations à des projets ainsi que l'administration de leur compte d'un utilisateur.
 
 \begin{figure}[h]
 \begin{center}
@@ -220,6 +222,7 @@ Le sous modules Utilisateur \& permissions d'ajouter des utilisateurs au systèm
 \caption{Interface principale de la gestion des utilisateurs}
 \label{Interface principale de la gestion des utilisateurs}
 \end{figure} 
+
 La figure ci haute résume à lui seule l'étendu de ce sous menu à savoir l'ajout d'un utilisateur. L'attribution à des niveaux  d'accès, son affiliation à des projets ainsi que la suppression des comptes.
 
 \subsection{Ajouter un utilisateur}
@@ -232,6 +235,7 @@ Lorsque l'utilisateur appuis sur le bouton \includegraphics[scale=1]{pic/AddUser
 \label{Formulaire permettant d'ajouter un utilisateur}
 \end{figure}
 \newpage
+
 Après avoir rempli les différents champs du formulaire, la création n'est effective qu'après la validation du bouton Soumettre.
 Une fois que le compte de l'utilisateur est créé, son compte s'ajoute dans la liste des comptes existant dans le système.
 
@@ -245,7 +249,7 @@ Pour gérer les utilisateurs du système, il suffit d'utiliser le tableau \textb
 \label{Liste des utilisateurs enregistrés}
 \end{figure}
 \\
- \includegraphics[scale=1]{pic/EditUser.png} Permet d'éditer les Métadonnées de l'utilisateur comme par exemple changer le nom de l'utilisateur, son login et même reinitialiser le mot de passe.
+ \includegraphics[scale=1]{pic/EditUser.png} Permet d'éditer les Métadonnées d'un utilisateur comme par exemple changer son nom de l'utilisateur, son login et même réinitialiser son mot de passe.
 \\ 
  \begin{figure}[h]
 \begin{center}
@@ -256,7 +260,7 @@ Pour gérer les utilisateurs du système, il suffit d'utiliser le tableau \textb
 \end{figure}
 
 \newpage
- \includegraphics[scale=1]{pic/PermissionUser.png} Permet d'éditer la permission de l'Utilisateur.
+ \includegraphics[scale=1]{pic/PermissionUser.png} Permet d'éditer les permissions et les droits d'accès d'un Utilisateur.
  \begin{figure}[h]
 \begin{center}
 \includegraphics[width=6cm]{pic/ListeDePermission.png}
@@ -268,17 +272,17 @@ Pour gérer les utilisateurs du système, il suffit d'utiliser le tableau \textb
 La liste des permissions correspond exactement à la liste des fonctionnalités du système hormis le niveau d'accès super user qui permet d'accéder a toutes les fonctionnalités du système. Pour attribuer une permission à un utilisateur il suffit de cocher la dite permission.
 \\
 \\
-\includegraphics[scale=1]{pic/Projet.png} Permet d'affilier l'utilisateur dans projets.
+\includegraphics[scale=1]{pic/Projet.png} Permet d'affilier un utilisateur dans un projet.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=6cm]{pic/ListeProjet.png}
 \end{center}
-\caption{Formulaire permettant de modifier l'attribution à des projets}
-\label{Formulaire permettant de modifier l'attribution à des projets}
+\caption{Formulaire permettant de modifier l'affiliation à des projets}
+\label{Formulaire permettant de modifier l'affiliation à des projets}
 \end{figure}
-Grâce à ce formulaire ont peux modifier l'attribution d'un utilisateur par rapport aux projets.
+Grâce à ce formulaire on peux modifier l'attribution d'un utilisateur par rapport aux projets.
 \newpage
-\includegraphics[scale=1]{pic/DeleteUser.png} Permet de supprimer un compte utilisateur.
+\includegraphics[scale=1]{pic/DeleteUser.png} Permet de supprimer le compte d'un utilisateur.
 %//////////////////% 
 
 
