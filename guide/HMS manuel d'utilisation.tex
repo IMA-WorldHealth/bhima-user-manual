@@ -64,8 +64,8 @@ Cliquant sur le dossier permet d'afficher la liste de sous modules sélectionné
 \begin{center}
 \includegraphics[width=8cm]{pic/open_folder.png}
 \end{center}
-\caption{Clique sur le dossier "admin" afin de pouvoir visualiser ses sous modules}
-\label{Clique sur le dossier "admin" afin de pouvoir visualiser ses sous modules}
+\caption{Illustration d'un sur Clique sur le dossier "admin" afin de pouvoir visualiser ses sous modules}
+\label{Illustration d'un sur Clique sur le dossier "admin" afin de pouvoir visualiser ses sous modules}
 \end{figure} 
 
 
@@ -85,12 +85,15 @@ Voici les différentes rubriques qui existent dans le système:
 \item Admin. %•
 \item Budget
 \item Canevas SNIS
+\item Commande d'achat
 \item Comptabilité
 \item Finances
 \item Hôpital
+\item Inventaires
 \item Payroll
 \item Rapports
 \item Stock
+\item Tableau de bord
 \end{itemize}
 
 
@@ -112,8 +115,8 @@ Le module admin est composé des sous modules qui permettent d'administrer le sy
 \end{figure} 
 
 \newpage
-\section{Cashbox}
-Le module Gestion des Cashbox permet d'administrer les différents types de caisses existant au sein de l'organisation, ce module permet aussi de configurer certains paramètres nécessaire à l'administration de Cash Box.
+\section{Caisses et Banques}
+Le module Gestion des caisses et des comptes bancaires permet d'administrer les différents types de caisses et des comptes bancaires existants au sein de l'organisation, ce module permet aussi de configurer certains paramètres nécessaire à l'administration des caisses.
 
 Son interface principale se présente de la manière suivante.
 
@@ -149,8 +152,41 @@ Le tableau réprésentant les Cashbox existantes donne la possibilité de pouvoi
 \label{Apperçu du formulaire permettant la mise à jour des informations rélatives à un CashBox}
 \end{figure} 
 
+\section{Donateurs}
+Le module gestion des donateurs est un module qui a été conçu pour permettre l'administration des différents donateurs de l'organisation, le tableau qui se trouve à gauche permet d’enregistrer, de mettre à jour les attributs d'un donateur ainsi que la suppression.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=14cm]{pic/GestionDonateur.png}
+\end{center}
+\caption{Interface principale de la gestion des donateurs}
+\label{Interface principale de la gestion des donateurs}
+\end{figure}
+
+Dans la figure ci-haute on retrouve dans la partie gauche la liste des différents donateurs enregistrés dans le système, au dessus de ce tableau existe le bouton \includegraphics[scale=1]{pic/AddDonor.png} qui permet d'ajouter un nouveau donateur dans le système, le formulaire permettant de faire l'enregistrement de donateur se présente de la manière suivante.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=8cm]{pic/NewDonor.png}
+\end{center}
+\caption{Formulaire permettant l'enregistrement des donateurs}
+\label{Formulaire permettant l'enregistrement des donateurs}
+\end{figure} 
+
+Le formulaire permettant l'enregistrement des donqteurs est très simple, il ne contient que la zone de saisie permettant de renseigner le nom du donateur, et l'enregistrement est effective que si l'on clique sur le bouton soumettre. 
+
+Les tableaux réprésentant les fonctions enregistrées donne la possibilité de pouvoir mettre à jour les informations rélative à un donateur, dans la zone action de ce tableau on retrouve deux icônes, l'icône \includegraphics[scale=0.7]{pic/EditBlack.png} qui permet de mettre à jour une fonction et \includegraphics[scale=0.7]{pic/DeleteWRed.png} permet de supprimer une fonction dans le système.
+Voici un apperçu du formulaire permettant la mise à jour des informations d'un fonction, la mise à jour est effective que si l'on modifier les informations dont on a besoin en validant grace au bouton soumettre. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=8cm]{pic/UpdateDonor.png}
+\end{center}
+\caption{Formulaire permettant de mettre à jour un donateur}
+\label{Formulaire permettant de mettre à jour un donateur}
+\end{figure} 
+
 \newpage
-\section{Dépôt}
+\section{Dépôts}
 Ce module permet d'enregistré mais aussi de gérer les dépôts ou bien entrepôts.
 
 \begin{figure}[h]
@@ -698,6 +734,46 @@ Le module Budget permet de gérer l'ensemble des comptes qui décrivent, pour un
 \label{Le module Budget et ses sous menus}
 \end{figure} 
 
+\section{Analyse du Budget}
+L’analyse budgétaire permet de faire l’analyse de l’évolution des principales dépenses et recettes d'une organisation classées par nature. Elle concerne également l’analyse des données classées par secteurs d’activité.
+
+Pour tirer des conclusions intéressantes, comparer ces éléments avec ceux d’autres collectivités, des ratios et des indicateurs peuvent être utilisés même s’ils doivent être maniés avec la plus grande précaution.
+\newpage
+L'interface principale de ce module se présente de la manière suivante.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/AnalyseBudgetaire.png}
+\end{center}
+\caption{Aperçue de l'interface principale du module Analyse du Budget}
+\label{Aperçue de l'interface principale du module Analyse du Budget}
+\end{figure}
+
+Pour procéder à l'analyse du budget il suffit de séléctionner le budger rélative à une année fiscale, en suite de déterminer une période ainsi que le type de compte à analysé il peut s'agir soit des dépenses ou bien des ressources, il est aussi possible de pouvoir inclure les budgets des années fiscales précédentes
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=7cm]{pic/PrecedBudget.png}
+\end{center}
+\caption{Aperçue du processus d'integration du budget d'une année fiscale antérieure}
+\label{Aperçue du processus d'integration du budget d'une année fiscale antérieure}
+\end{figure}
+\newpage
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/AnalyseBudgetResult.png}
+\end{center}
+\caption{Aperçue des données permettant l'analyse budgetaire}
+\label{Aperçue des données permettant l'analyse budgetaire}
+\end{figure}
+
+\begin{itemize}
+\item  \includegraphics[scale=1]{pic/refresh.png} permet de procéder à une nouvelle analyse budgetare,
+\item  \includegraphics[scale=1]{pic/ExportCVS.png} permet d'exporter les données aux formats excell,
+\item \includegraphics[scale=1]{pic/Print.png} permet d'imprimer les données de l'analyse bugetaire,
+\end{itemize}
+
+
+\newpage
 \section{Budget par Compte}
 Le module Budget par compte, permet visualiser à partir d'un tableau récapitulatif des recettes et des dépenses prévisionnelles déterminées et chiffrées pour un année fiscale.
 
@@ -713,7 +789,6 @@ Son interface principale se présente de la manière suivante.
 
 Par défaut c'est l'année fiscale en cours qui est sélectionné, pour changer d'année fiscale, il suffit de cliquer sur la dite année fiscale pour pouvoir changer des lignes. Le bouton soumettre permet d'afficher le tableau récaputilatif du budget.
 
-\newpage
 Voici l'apperçue du tableau récapitulatif du budget.
 
 \begin{figure}[h]
@@ -726,9 +801,90 @@ Voici l'apperçue du tableau récapitulatif du budget.
 
 Le bouton \includegraphics[scale=0.7]{pic/PrecedentBudget.png} permet de revenir vers l'interface principale de budget par compte et le bouton \includegraphics[scale=0.7]{pic/ExportCVS.png} permet d'importer le tableau recapitulatif du budget au format Excel.
 
+\newpage
+\section{Gestion Budgets}
+Pour bien établir le budget, le plus facile est de procéder par étape en faisant le point des ressources disponibles ainsi que des dépenses de l'année précédente, en suite établir des prévisions de revenus et de dépenses pour le semestre ou l'année à venir et avec des suivies et analyse régulière du budget ainsi réalisé. Avant d'engager une nouvelle dépense, assurez-vous de disposer des ressources nécessaires.
 
+l'interface principale permettant de d'établir un budget se présente de la manière suivante 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/CreateNewBudget.png}
+\end{center}
+\caption{Aperçue de l'interface principale permettant la création d'un nouveau budget}
+\label{Aperçue de l'interface principale permettant la création d'un nouveau budget}
+\end{figure}
+
+Pour l'établissement du budget d'un compte, il suffit pour cela de spécifier l'année fiscale dans la liste, il existe deux façon pour créer un budget soit en l'important via Excell ou bien en le définissant manuellement.
+\newpage
+\subsection{Importation avec Excell}
+Pour la création du budget via un fichier excell, il est nécessaire de sélectionner une période de l'année fiscale choisie, après avoir sélectionner la période, un clique sur le bouton \includegraphics[scale=0.7]{pic/EnterNewBudget.png} ouvre une boîte de dialogue permettant de sélectionner un fichier excell au format CVS, la figure suivante donne un apperçue de cette procédure.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/LoadCvsBudget.png}
+\end{center}
+\caption{Aperçue de l'interface illustrant la selection d'un fichier excell au format CVS}
+\label{Aperçue de l'interface illustrant la selection d'un fichier excell au format CVS}
+\end{figure}
+
+NB, le fichier CVS à importer doit nécessairement être conforme à ceux générer par le système et pour une meilleur utilisation il est souhaitable de d'exporter d'abord le budger de la période pour le quelle on voudrait créer des nouveaux budgets et en suite détérminer le budget des comptes.
+
+Voicu un apercue du fichier CVS permettant l'importation du Budget.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/BudgetCVS.png}
+\end{center}
+\caption{Aperçue d'un fichier CVS compatible pour la création du Budget avec le système}
+\label{Aperçue d'un fichier CVS compatible pour la création du Budget avec le système}
+\end{figure}
+
+\newpage
+\subsection{Définition manuelle du budget} 
+La procédure permettant d'établir un budget manuellement, propose une zone de texte permettant la recherche d'un compte pour le quel on voudriait determiner le budget.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/CreateMamuelBudget.png}
+\end{center}
+\caption{Aperçue de l'interface permettant l'établissement manuel du budget d'un compte}
+\label{Aperçue de l'interface permettant l'établissement manuel du budget d'un compte}
+\end{figure}
+
+Une fois qu'un compte est séléctionné, il suffit de cliquer sur le bouton \textbf{Soumettre} pour preciser le budget d'un compte. Le système signale s'il existe déjà un budget pour ce compte pour l'année fiscale en cours, comme le montre la figure suivante. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/CreatBudgCompte.png}
+\end{center}
+\caption{Aperçue de l'étape d'initialisation d'un budget d'un compte}
+\label{Aperçue de l'étape d'initialisation d'un budget d'un compte}
+\end{figure}
+
+Dans le cas où aucun budget n'existe pour le compte choisi le bouton \includegraphics[scale=0.7]{pic/CreateBudget.png} permet d'acceder à l'interface d'initialisation du budget.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/ModifierBudgetCompt2.png}
+\end{center}
+\caption{Aperçue de l'étape d'initialisation d'un budget d'un compte}
+\label{Aperçue de l'étape d'initialisation d'un budget d'un compte}
+\end{figure}
+
+La première de chose à faire est de spécifier le budget total annuel pour un compte.
+Après avoir spécifier le total, il faudrait aussi spécifier le budget mensuel.
+
+Le bouton \includegraphics[scale=0.7]{pic/AjustBudget.png} permet de diviser équitablement le budget annuel sur tout le mois de l'année fiscale.
+
+Dans le cas où les budgets de certains mois doivent être spécifier différement des autres, le bouton \includegraphics[scale=0.7]{pic/BudgetGeler.png} permet de verrouiller le budget, ceci empecherait que le montant spécifier puissent être ajuster automatiquement.
+
+Et une fois que le budget est spécifié et est équitablement repartis sur les mois d'une année fiscale, il suffit de cliquer sur le bouton \textbf{Soumettre} pour configurer le budget annuel.
+
+\newpage
 \section{Modifier budget d'un compte}
-Le moduleModifier budget d'un compte, permet de spécifier le budget annuel d'un compte, durant une année fiscale, ce module permet aussi de spécifier le budget mensuel d'un compte.
+Le module Modifier budget d'un compte, permet de spécifier le budget annuel d'un compte, durant une année fiscale, ce module permet aussi de spécifier le budget mensuel d'un compte.
 
 L'interface principale de ce module permet de pouvoir sélectionner le compte pour lequel on souhaite préciser le budget annuel.
 
@@ -749,9 +905,23 @@ Dans l'image ci-haut, l'on peut s'appercevoir que l'année fiscale en cours est 
 \caption{Interface principale permettant la gestion de budget d'un compte}
 \label{Interface principale permettant la gestion de budget d'un compte}
 \end{figure}
+\newpage
+Une fois qu'un compte a était choisi, le système redirige directement vers l'interface qui permet de modifier le budget initiale comme le monte la figure suivante.
 
-Une fois qu'un compte a était choisi, le système signale s'il existe déjà un compte pour l'année fiscale en cours, comme le montre l'année fiscale en cours. 
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=12cm]{pic/MAJBudget.png}
+\end{center}
+\caption{Aperçue de l'interface permettant la mise à jour d'un budget}
+\label{Aperçue de l'interface permettant la mise à jour d'un budget}
+\end{figure}
+
+NB: L'interface permettant de mettre à jour le budget s'actualise automatiquement au moment ou l'on modifie le budget mensuel ou bien annuel d'un compte, pour empecher le budger initiale d'un mois de pouvoir s'ajuster automatiquement il suffit de cliquer sur la case à cochée de la colonne géler rélative à chaque mois comme le montre la figure ci dessus.
+La mise à jour du budget d'un compte est effective après un clic sur le bouton \includegraphics[scale=0.7]{pic/UpBudget.png}
+
+\newpage
+Mais si le compte choisi ne dispose d'aucun budget le système le signal automatique et donne ainsi la possibilité d'initialisé un nouveau budget
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=12cm]{pic/ModBudger1.png}
@@ -760,7 +930,6 @@ Une fois qu'un compte a était choisi, le système signale s'il existe déjà un
 \label{Aperçue de l'étape d'initialisation d'un budget d'un compte}
 \end{figure}
 
-\newpage
 Après cette étape, il existe l'interface proprement dits d'initialisation du budget d'un compte qui se présente de la manière suivante.
 
 \begin{figure}[h]
@@ -779,6 +948,7 @@ Le bouton \includegraphics[scale=0.7]{pic/AjustBudget.png} permet de diviser éq
 Dans le cas où les budgets de certains mois doivent être spécifier différement des autres, le bouton \includegraphics[scale=0.7]{pic/BudgetGeler.png} permet de verrouiller le budget, ceci empecherait que le montant spécifier puissent être ajuster automatiquement.
 
 Et une fois que le budget est spécifié et est équitablement repartis sur les mois d'une année fiscale, il suffit de cliquer sur le bouton \textbf{Soumettre} pour configurer le budget annuel.
+
 
 
 \newpage
@@ -935,7 +1105,7 @@ Voici comment se présente la liste des années fiscale
 \end{figure}
 
 \newpage
-Pour pouvoir visualiser les détailles d'une année fiscale il suffit de cliquer sur cette année fiscale dans la liste des années fiscaux.
+Pour pouvoir visualiser les détailles d'une année fiscale il suffit de cliquer sur le bouton \includegraphics[scale=1]{pic/EyesBlue.png}.
 
 \begin{figure}[h]
 \begin{center}
@@ -955,7 +1125,7 @@ Voici le menu gérérale du module gestion de centre de coûts.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=14cm]{pic/GestCentreCout.png}
+\includegraphics[width=16cm]{pic/GestCentreCout.png}
 \end{center}
 \caption{Menu gérérale du module gestion de centre de coûts}
 \label{Menu gérérale du module gestion de centre de coûts}
@@ -3402,40 +3572,6 @@ le formulaire d'enregistrement des fournisseurs nécessites pour l'enregistremen
 
 Le tableau permet de lister les fournisseurs inscrits possède le bouton \includegraphics[scale=0.7]{pic/EditSupplier.png} qui permet d'afficher le formulaire de mise à jour des informations liées à un fournisseur, une fois que les modifications sont faites il existe en bas du formulaire le bouton \includegraphics[scale=0.7]{pic/MettreJourSuppl.png} qui permet de sauvegarder les données mis à jour.
 \newpage
-
-\section{Gestion des donateurs}
-Le module gestion des donateurs est un module qui a été conçu pour permettre l'administration des différents donateurs de l'organisation, le tableau qui se trouve à gauche permet d’enregistrer, de mettre à jour les attributs d'un donateur ainsi que la suppression.
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=14cm]{pic/GestionDonateur.png}
-\end{center}
-\caption{Interface principale de la gestion des donateurs}
-\label{Interface principale de la gestion des donateurs}
-\end{figure}
-
-Dans la figure ci-haute on retrouve dans la partie gauche la liste des différents donateurs enregistrés dans le système, au dessus de ce tableau existe le bouton \includegraphics[scale=1]{pic/AddDonor.png} qui permet d'ajouter un nouveau donateur dans le système, le formulaire permettant de faire l'enregistrement de donateur se présente de la manière suivante.
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=8cm]{pic/NewDonor.png}
-\end{center}
-\caption{Formulaire permettant l'enregistrement des donateurs}
-\label{Formulaire permettant l'enregistrement des donateurs}
-\end{figure} 
-
-Le formulaire permettant l'enregistrement des donqteurs est très simple, il ne contient que la zone de saisie permettant de renseigner le nom du donateur, et l'enregistrement est effective que si l'on clique sur le bouton soumettre. 
-
-Les tableaux réprésentant les fonctions enregistrées donne la possibilité de pouvoir mettre à jour les informations rélative à un donateur, dans la zone action de ce tableau on retrouve deux icônes, l'icône \includegraphics[scale=0.7]{pic/EditBlack.png} qui permet de mettre à jour une fonction et \includegraphics[scale=0.7]{pic/DeleteWRed.png} permet de supprimer une fonction dans le système.
-Voici un apperçu du formulaire permettant la mise à jour des informations d'un fonction, la mise à jour est effective que si l'on modifier les informations dont on a besoin en validant grace au bouton soumettre. 
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=8cm]{pic/UpdateDonor.png}
-\end{center}
-\caption{Formulaire permettant de mettre à jour un donateur}
-\label{Formulaire permettant de mettre à jour un donateur}
-\end{figure} 
-
 
 \newpage
 \section{Gestion de l'Inventaire}
